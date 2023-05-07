@@ -1,0 +1,56 @@
+@import './variable.scss';
+
+@media (min-width: 767px) and (max-width: 1024px) {
+
+    .containerLogo {
+        
+        padding-top: 3rem;
+
+        &>.logoAlura {
+            width: 4rem;
+            height: 6rem;
+        }
+    }
+
+    .containerTextUser {
+        padding: 1rem;
+
+        .textAreaInput {
+            font-size: 40px;
+        }
+
+        &>h5{
+            font-size:24px ;
+        }
+
+    }
+
+    .containerButtons {
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+
+
+        .encrypt,
+        .decrypt {
+            height: 4rem;
+            width: 18rem;
+            font-size: 20px;
+        }
+    }
+
+    .containerTextEncript {
+
+        .textAreaResult {
+            padding: 1.5rem;
+            height: auto;
+        }
+
+        .copyButton {
+            height: 4rem;
+            width: 18rem;
+            font-size: 20px;
+        }
+    }
+
+}

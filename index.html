@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./encrypt-decrypt.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <div id="containerAll">
+
+      <header>
+        <div class="containerLogo">
+          <img class="logoAlura" src="public/aluraLogo1.png" alt="aluraLogo">
+          <h3 class="titulo">ENCRIPTADOR</h3>
+        </div>
+      </header>
+
+      <main>
+        <div class="containerTextUser">
+          <textarea class="textAreaInput" placeholder="Ingrese el texto que quieres encriptar" name="inputUser" id="textInput" cols="30" rows="10" autocapitalize="none"  required></textarea>
+          <h5>* Ingresa solo letras minusculas y sin acentos</h5>
+        </div>
+        <div class="containerButtons">
+          <button id="btnEnc" class="encrypt"> Encriptar </button>
+          <button id="btnDec" class="decrypt"> Desencriptar </button>
+        </div>
+        <div class="containerTextEncript">
+          <textarea class="textAreaResult" name="resultText" id="result" cols="30" rows="10" placeholder="Todavía no hay texto encriptado"></textarea>
+          <button class="copyButton">Copiar</button>
+        </div>
+      </main>
+    </div>
+    <footer>
+      Stephany Castro Salas 😁
+    </footer>
+  </body>
+</html>

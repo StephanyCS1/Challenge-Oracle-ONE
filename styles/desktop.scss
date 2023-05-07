@@ -1,0 +1,78 @@
+@import './variable.scss';
+
+@media (min-width: 1023px){
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 550px 100px ;
+        grid-gap: 10px;
+    }
+
+    .containerLogo {
+
+        padding-top: 3rem;
+
+        &>.logoAlura {
+            width: 4rem;
+            height: 6rem;
+        }
+    }
+
+    .containerTextUser {
+        padding: 1rem;
+        
+        grid-column:1/ span 2;
+        grid-row: 1/ span 1;
+        .textAreaInput {
+            font-size: 40px;
+            
+        }
+
+        &>h5 {
+            font-size: 24px;
+        }
+
+    }
+
+    .containerButtons {
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+        align-items: center;
+        height: 100%;
+        grid-column:1/ span 2;
+        grid-row: 2/ span 2;
+        .encrypt,
+        .decrypt {
+            height: 4rem;
+            width: 18rem;
+            font-size: 20px;
+        }
+    }
+
+    .containerTextEncript {
+        border-radius: 12px;
+        border: 2px solid $Dark-blue-300;
+        padding: 0.5rem;
+        grid-column:3/ span 1;
+        grid-row: 1/ span 2;
+        justify-content: space-between;
+        margin: 0 10px;
+        width: 90%;
+
+        .textAreaResult{
+            padding: 1.5rem;
+            height: 100%;
+        }
+
+        .copyButton {
+            height: 5rem;
+            width: 18rem;
+            font-size: 20px;
+            margin: 1rem 0;
+}
+    }
+
+}
+

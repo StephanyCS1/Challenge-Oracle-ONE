@@ -1,0 +1,160 @@
+
+@import './variable.scss';
+
+    .containerAll {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #181818;
+
+    }
+
+    .containerLogo {
+        display: flex;
+        align-items: center;
+        gap: 10%;
+        .logoAlura {
+            width: 3rem;
+            height: 4rem;
+        }
+
+        .titulo{
+            font-size: large;
+            font-weight: bold;
+            color: $Dark-blue-500;
+            box-shadow: 0 2px $Dark-blue-300;
+        }
+    }
+
+    .containerTextUser,
+    .containerTextEncript {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+
+        .textAreaInput{
+            
+            background-image: url(../public/ethical-hacker-junior.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            border: none;
+            font-size: 30px;
+            padding: 0.5rem;
+            border-radius: 12px;
+            color: $Dark-blue-500;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            -ms-border-radius: 12px;
+            -o-border-radius: 12px;
+        }
+
+        .textAreaInput:focus {
+            outline-color: $Light-Blue-500;
+            background-color: #609ed42b;
+        }
+
+        &>h5 {
+            color: $Gray-200;
+            font-size: small;
+        }
+    }
+
+    .containerButtons {
+        display: flex;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        .encrypt {
+            background-color: $Dark-blue-400;
+            color: $Light-Blue-500;
+            width: 90%;
+            height: 2.5rem;
+            margin: 0.5rem 0;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            border: none;
+        }
+
+        .encrypt:hover {
+            background-color: $Light-Blue-500;
+            color: $Dark-blue-400;
+            transform: scale(1.1);
+        }
+
+
+        .decrypt {
+            background-color: $Gray-100;
+            width: 90%;
+            height: 2.5rem;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            border: none;
+        }
+
+        .decrypt:hover {
+            background-color: $Light-Blue-400;
+            color: $Dark-blue-400;
+            transform: scale(1.1);
+        }
+    }
+
+    .containerTextEncript {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        .textAreaResult {
+            border: none;
+            width: 100%;
+            color: $Gray-500;
+            height: 12rem;
+            padding: 0.5rem;
+            font-size: 30px;
+            margin-bottom: 1rem;
+            border-radius: 12px;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            -ms-border-radius: 12px;
+            -o-border-radius: 12px;
+        }
+        
+
+        .copyButton {
+
+            background-color: $Light-Blue-400;
+            color: $Gray-500;
+            width: 90%;
+            height: 2.5rem;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            border: none;
+        }
+
+        .copyButton:hover {
+            background-color: $Light-Blue-500;
+            color: $Dark-blue-400;
+            transform: scale(1.1);
+        }
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+    }

@@ -1,0 +1,259 @@
+.containerAll {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #181818;
+}
+
+.containerLogo {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+.containerLogo .logoAlura {
+  width: 3rem;
+  height: 4rem;
+}
+.containerLogo .titulo {
+  font-size: large;
+  font-weight: bold;
+  color: #052051;
+  box-shadow: 0 2px #0A3871;
+}
+
+.containerTextUser,
+.containerTextEncript {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.containerTextUser .textAreaInput,
+.containerTextEncript .textAreaInput {
+  background-image: url(../public/ethical-hacker-junior.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  border: none;
+  font-size: 30px;
+  padding: 0.5rem;
+  border-radius: 12px;
+  color: #052051;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.containerTextUser .textAreaInput:focus,
+.containerTextEncript .textAreaInput:focus {
+  outline-color: #757FB2;
+  background-color: rgba(96, 158, 212, 0.168627451);
+}
+.containerTextUser > h5,
+.containerTextEncript > h5 {
+  color: #ADB5BD;
+  font-size: small;
+}
+
+.containerButtons {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.containerButtons .encrypt {
+  background-color: #072B61;
+  color: #757FB2;
+  width: 90%;
+  height: 2.5rem;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: none;
+}
+.containerButtons .encrypt:hover {
+  background-color: #757FB2;
+  color: #072B61;
+  transform: scale(1.1);
+}
+.containerButtons .decrypt {
+  background-color: #CED4DA;
+  width: 90%;
+  height: 2.5rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: none;
+}
+.containerButtons .decrypt:hover {
+  background-color: #AAB2D5;
+  color: #072B61;
+  transform: scale(1.1);
+}
+
+.containerTextEncript {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.containerTextEncript .textAreaResult {
+  border: none;
+  width: 100%;
+  color: #343A40;
+  height: 12rem;
+  padding: 0.5rem;
+  font-size: 30px;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.containerTextEncript .copyButton {
+  background-color: #AAB2D5;
+  color: #343A40;
+  width: 90%;
+  height: 2.5rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: none;
+}
+.containerTextEncript .copyButton:hover {
+  background-color: #757FB2;
+  color: #072B61;
+  transform: scale(1.1);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .containerLogo {
+    padding-top: 3rem;
+  }
+  .containerLogo > .logoAlura {
+    width: 4rem;
+    height: 6rem;
+  }
+  .containerTextUser {
+    padding: 1rem;
+  }
+  .containerTextUser .textAreaInput {
+    font-size: 40px;
+  }
+  .containerTextUser > h5 {
+    font-size: 24px;
+  }
+  .containerButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+  }
+  .containerButtons .encrypt,
+  .containerButtons .decrypt {
+    height: 4rem;
+    width: 18rem;
+    font-size: 20px;
+  }
+  .containerTextEncript .textAreaResult {
+    padding: 1.5rem;
+    height: auto;
+  }
+  .containerTextEncript .copyButton {
+    height: 4rem;
+    width: 18rem;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1023px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 550px 100px;
+    grid-gap: 10px;
+  }
+  .containerLogo {
+    padding-top: 3rem;
+  }
+  .containerLogo > .logoAlura {
+    width: 4rem;
+    height: 6rem;
+  }
+  .containerTextUser {
+    padding: 1rem;
+    grid-column: 1/span 2;
+    grid-row: 1/span 1;
+  }
+  .containerTextUser .textAreaInput {
+    font-size: 40px;
+  }
+  .containerTextUser > h5 {
+    font-size: 24px;
+  }
+  .containerButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    align-items: center;
+    height: 100%;
+    grid-column: 1/span 2;
+    grid-row: 2/span 2;
+  }
+  .containerButtons .encrypt,
+  .containerButtons .decrypt {
+    height: 4rem;
+    width: 18rem;
+    font-size: 20px;
+  }
+  .containerTextEncript {
+    border-radius: 12px;
+    border: 2px solid #0A3871;
+    padding: 0.5rem;
+    grid-column: 3/span 1;
+    grid-row: 1/span 2;
+    justify-content: space-between;
+    margin: 0 10px;
+    width: 90%;
+  }
+  .containerTextEncript .textAreaResult {
+    padding: 1.5rem;
+    height: 100%;
+  }
+  .containerTextEncript .copyButton {
+    height: 5rem;
+    width: 18rem;
+    font-size: 20px;
+    margin: 1rem 0;
+  }
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body, main {
+  width: 100%;
+}
+
+header, main {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+/*# sourceMappingURL=styles.css.map */
